@@ -22,3 +22,24 @@
     transform: scaleX(1);
     /*transform-origin: bottom left;*/
 }
+
+.nb-background-color { /* navbar background color */
+    background-color: #1e293b;
+}
+
+.logo-container {
+    overflow: hidden;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.logo {
+    background-size: cover;
+}
+
+.nb-menu-item {
+    font-size: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
