@@ -23,8 +23,24 @@
     /*transform-origin: bottom left;*/
 }
 
+.how-to {
+    font-size: 20px;
+}
+
+.authors, .procedure {
+    background-color: #dbe3e7
+}
+
 .nb-background-color { /* navbar background color */
     background-color: #1e293b;
+}
+
+.overview {
+    background-color: #dbe3e7
+}
+
+.ov-pad-left {
+    padding-left: 20px;
 }
 
 .logo-container {
@@ -43,3 +59,8 @@
     margin-left: 10px;
     margin-right: 10px;
 }
+
+.footer {
+    background-color: #023eba;
+}
+
