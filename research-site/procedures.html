@@ -19,6 +19,7 @@
 
     </head>
     <body>
+        <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
             <div class="container">
                 <a href="./index.html" class="navbar-brand logo overflow-hidden logo-container">
@@ -26,13 +27,13 @@
                 </a>
             </div>
             <!-- hamburger menu button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navmenu" onclick="toggle()"> <!-- Button to toggle navbar on small screens, couldn't get bootstrap to work so I wrote my own script to toggle a vertical display on small screens (see below) -->
                 <span class="navbar-toggler-icon"></span>
-            </button>
+              </button>
 
             <!-- collapsible navbar menu with custom hover underline css -->
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a href="authors.html" class="nav-link hover-underline-animation nb-menu-item">Authors</a>
                     </li>
@@ -46,22 +47,26 @@
             </div>
         </nav>
 
+        <!--Procedure Table-->
         <section class="procedure p-2">
             <div class="container">
                 <br>
+                <!--Procedure Title-->
                 <div class="text-center">
                     <h1 class="font-weight-bold">Procedure</h1>
                     <h2 style="color: #64748b; font-weight: light; font-size: 26px;">Engineering procedure for research project</h2>
                 </div>
                 <br><br>
+                <!--Main Procedure Table-->
                 <table class="table table-hover table-bordered border-dark" style="border-color: black">
-                    <thead class="thead-dark">
+                    <thead class="thead-dark"> <!--Headers-->
                         <tr>
                             <th class="text-center"><h3>Step</h3></th>
                             <th class="text-center"><h3>Method</h3></th>
                             <th class="text-center"><h3>Photo</h3></th>
                         </tr>
                     </thead>
+                    <!--Procedure list-->
                     <tbody>
                         <tr>
                             <th scope="col" class="text-center"><h2>Step 1</h2></th>
@@ -73,7 +78,7 @@
                                     <li>The text processor is combined with a ResNet to make a siamese architecture to compare embeddings</li>
                                 </ul>
                             </td>
-                            <td class="text-center p-2"><img src="images/method1.png" alt="bruh"></td>
+                            <td class="text-center p-4"><img src="images/method1.png" alt="bruh"></td>
                         </tr>
                         <tr>
                             <th scope="col" class="text-center"><h2>Step 2</h2></th>
@@ -87,7 +92,7 @@
                                 </ul>
                             </div>
                             </td>
-                            <td class="text-center p-2"><img src="images/method2.png" alt="bruh" width="350" ></td>
+                            <td class="text-center p-4"><img src="images/method2.png" alt="bruh" width="350" ></td>
                         </tr>
                         <tr>
                             <th scope="col" class="text-center"><h2>Step 3</h2></th>
@@ -99,7 +104,7 @@
                                     <li>Third trial used LSTM memory</li>
                                 </ul>
                             </td>
-                            <td class="text-center p-2"><img src="images/method3.png" alt="bruh" width="350" ></td>
+                            <td class="text-center p-4"><img src="images/method3.png" alt="bruh" width="350" ></td>
                         </tr>
                         <tr>
                             <th scope="col" class="text-center"><h2>Step 4</h2></th>
@@ -110,22 +115,30 @@
                                     <li>Reward measure are used to evaluate algorithm efficacy</li>
                                 </ul>
                             </td>
-                            <td class="text-center p-2"><img src="images/method4.png" alt="bruh" width="350" ></td>
+                            <td class="text-center p-4"><img src="images/method4.png" alt="bruh" width="350" ></td>
                         </tr>
                     </tbody>
                 </table>
             </div>
         </section>
 
-        
-
         <footer class="p-5 footer text-light text-center position-relative">
             <div class="container">
                 <p class="lead">Copyright &copy; SE 2023 Bootstrap Demo</p>
+                <!--Back to top link-->
                 <a href="#" class="position-relative bottom-0 end-0 p-5">
-                    <i class="b1 b1-arrow-up-circle h2 icon-white"></i>
+                    <i class="b1 b1-arrow-up-circle h2 icon-white" style="color: #cbd5e1">Back to Top</i>
                 </a>
             </div>
         </footer>
     </body>
+
+    <script>
+        let open = false
+
+        function toggle() {
+            let d = document.getElementById("navmenu").style.display // get display value of element
+            document.getElementById("navmenu").style.display = d === "none" ? "block" : "none" // toggle the display to be block if invisible (open), or none otherwise (close)
+        }
+    </script>
 </html>
