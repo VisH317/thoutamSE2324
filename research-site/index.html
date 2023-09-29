@@ -21,18 +21,18 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
             <div class="container">
-                <a href="#" class="navbar-brand logo overflow-hidden logo-container">
+                <a href="./index.html" class="navbar-brand logo overflow-hidden logo-container">
                     <img src="images/logo.png" alt="logo" class="d-inline-block w-100 h-100 logo" width="64px" height="64px">
                 </a>
             </div>
             <!-- hamburger menu button -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse">
+            <button class="navbar-toggler ml-4" type="button" data-bs-toggle="collapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <!-- collapsible navbar menu with custom hover underline css -->
             <div class="collapse navbar-collapse" id="navmenu">
-                <ul class="navbar-nav ms-auto">
+                <ul class="navbar-nav mx-auto">
                     <li class="nav-item">
                         <a href="authors.html" class="nav-link hover-underline-animation nb-menu-item">Authors</a>
                     </li>
@@ -46,43 +46,41 @@
             </div>
         </nav>
 
-        <section class="showcase text-light p-2 text-center">
+        <section class="showcase text-light p-4 text-center">
             <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 p-0 d-flex align-items-center">
+                <div class="d-flex flex-row w-100 mx-auto">
+                    <div class="p-2 d-flex align-items-center">
                         <img class="img-fluid" src="images/man1.png" alt="profile pic">
                     </div>
-                    <div clas="col-sm-6 p-0 d-flex align-items-center">
-                        <div class="container">
-                            <h1 class="display-4">Water Temperatures Near Avon, NJ (2021-2022)</h1>
-                        </div>
+                    <div class="p-0 d-flex align-items-center text-center">
+                        <h1 class="display-4 text-dark">Target-Driven Visual Navigation To Find Objects Based on Text Descriptions</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="overview text-dark p-8 text-left">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-sm-6 p-0 d-flex align-items-center justify-content-center">
+                        <img class="img-fluid" src="images/man1.png" alt="profile pic" width="100" height="100">
+                    </div>
+                    <div class="col-sm-6 p-3">
+                        <h1 class="ov-pad-left">Background</h1>
+                        <p class="overview lead overview-font">Image-based AI navigation has become a very important concept for the future. It is what powers self driving car control loops, and a lot of the new navigation topics in robotics. However, many of these algorithms are unable to generalize to human text input. Using human text input, robots can navigate more efficiently using text commands instead of basic navigation, allowing for a better experience with self driving cars and other autonomous devices.</p>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="overview text-dark p-2 text-left">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6 p-0 d-flex align-items-center">
-                        <img class="img-fluid" src="images/man1.png" alt="profile pic" width="100" height="100">
-                    </div>
-                    <div class="col-sm-6 p-3">
-                        <h1 class="ov-pad-left">Background</h1>
-                        <p class="overview lead overview-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="overview text-dark p-2 text-left">
-            <div class="container">
+            <div class="container p-4">
                 <div class="row">
                     <div class="col-sm-6 p-3">
-                        <h1 class="ov-pad-left">Background</h1>
-                        <p class="overview lead overview-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h1 class="ov-pad-left">Methods</h1>
+                        <p class="overview lead overview-font">In this research study, an algorithm was created to take image and text input to navigate within a scene accordingly. 3 dimensional scenes from the AI2THOR scene library were used, and reward/environment metrics were decided to determine the training of the algorithm. A feature extractor was created to take the current image the robot sees and a text input to embed certain locations. The embedding is then passed onto a PPO policy gradient algorithm to generate the proper action. This was trained through multiple episodes and tested with loss measurements at each point</p>
                     </div>
-                    <div class="col-sm-6 p-0 d-flex align-items-center">
+                    <div class="col-sm-6 p-0 d-flex align-items-center text-center justify-content-center">
                         <img class="img-fluid" src="images/man1.png" alt="profile pic" width="100" height="100">
                     </div>
                 </div>
@@ -90,14 +88,14 @@
         </section>
 
         <section class="overview text-dark p-2 text-left">
-            <div class="container">
+            <div class="container p-4">
                 <div class="row">
-                    <div class="col-sm-6 p-0 d-flex align-items-center">
+                    <div class="col-sm-6 p-0 d-flex align-items-center justify-content-center">
                         <img class="img-fluid" src="images/man1.png" alt="profile pic" width="100" height="100">
                     </div>
                     <div class="col-sm-6 p-3">
-                        <h1 class="ov-pad-left">Background</h1>
-                        <p class="overview lead overview-font">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h1 class="ov-pad-left">Results</h1>
+                        <p class="overview lead overview-font">After training and testing the algorithm, results showed initial generalization to find different objects based on text commands. However, more training was required to get a more effective algorithm. Since proper resources to train the algorithm were not present, the robot's control system did not work as well as anticipated.</p>
                     </div>
                 </div>
             </div>

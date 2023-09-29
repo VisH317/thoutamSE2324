@@ -21,7 +21,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-dark nb-background-color">
             <div class="container">
-                <a href="#" class="navbar-brand logo overflow-hidden logo-container">
+                <a href="./index.html" class="navbar-brand logo overflow-hidden logo-container">
                     <img src="images/logo.png" alt="logo" class="d-inline-block w-100 h-100 logo" width="64px" height="64px">
                 </a>
             </div>
@@ -50,8 +50,8 @@
             <div class="container">
                 <br>
                 <div class="text-center">
-                    <h1>Procedure</h1>
-                    <h2>Using a numbered list, describe your porcedure w/ pictures</h2>
+                    <h1 class="font-weight-bold">Procedure</h1>
+                    <h2 style="color: #64748b; font-weight: light; font-size: 26px;">Engineering procedure for research project</h2>
                 </div>
                 <br><br>
                 <table class="table table-hover table-bordered border-dark" style="border-color: black">
@@ -66,30 +66,51 @@
                         <tr>
                             <th scope="col" class="text-center"><h2>Step 1</h2></th>
                             <td class="text-center">
-                                <p class="how-to">Train Conditional GAN Network to Match Image Embeddings</p>
+                                <p class="how-to">Create Feature Extractor Model using ResNet and cGAN</p>
+                                <ul class="text-left">
+                                    <li>The feature extractor requires a text processor model that maps to an image embedding</li>
+                                    <li>A Generative Adversarial Network was trained to convert a text embedding space into an image embedding space</li>
+                                    <li>The text processor is combined with a ResNet to make a siamese architecture to compare embeddings</li>
+                                </ul>
                             </td>
-                            <td class="text-center"><img src="images/logo.png" alt="bruh" aria-label="imagine being blind" width="250" height="250"></td>
+                            <td class="text-center p-2"><img src="images/method1.png" alt="bruh"></td>
                         </tr>
                         <tr>
                             <th scope="col" class="text-center"><h2>Step 2</h2></th>
                             <td class="text-center">
-                                <p class="how-to">Setup Feature Extractor architecture</p>
+                                <div class="w-100 h-100  d-flex flex-column justify-content-center h-100">
+                                <p class="how-to">Create the AI2THOR Environment wrapper & Setup the PPO Model</p>
+                                <ul class="text-left">
+                                    <li>The AI2THOR environment wrapper was created using OpenAI Gym</li>
+                                    <li>Create an environment reset and step function</li>
+                                    <li>Stable_baselines3 is used to create a PPO model that connects the feature extractor to predict on the environment</li>
+                                </ul>
+                            </div>
                             </td>
-                            <td class="text-center"><img src="images/logo.png" alt="bruh" aria-label="imagine being blind" width="250" height="250"></td>
+                            <td class="text-center p-2"><img src="images/method2.png" alt="bruh" width="350" ></td>
                         </tr>
                         <tr>
                             <th scope="col" class="text-center"><h2>Step 3</h2></th>
                             <td class="text-center">
-                                <p class="how-to">Create actor-critic PPO model</p>
+                                <p class="how-to">Train the cGAN and overall PPO model</p>
+                                <ul class="text-left">
+                                    <li>3 trials of training sessions were done with different typerparameters</li>
+                                    <li>First trial used negative rewards, removed in the second trial</li>
+                                    <li>Third trial used LSTM memory</li>
+                                </ul>
                             </td>
-                            <td class="text-center"><img src="images/logo.png" alt="bruh" aria-label="imagine being blind" width="250" height="250"></td>
+                            <td class="text-center p-2"><img src="images/method3.png" alt="bruh" width="350" ></td>
                         </tr>
                         <tr>
                             <th scope="col" class="text-center"><h2>Step 4</h2></th>
                             <td class="text-center">
-                                <p class="how-to">Begin Training and Evaluation</p>
+                                <p class="how-to">Evaluate Model on Environment</p>
+                                <ul class="text-left">
+                                    <li>Use separate environment rooms to evaluate the overall efficacy of the algorithm</li>
+                                    <li>Reward measure are used to evaluate algorithm efficacy</li>
+                                </ul>
                             </td>
-                            <td class="text-center"><img src="images/logo.png" alt="bruh" aria-label="imagine being blind" width="250" height="250"></td>
+                            <td class="text-center p-2"><img src="images/method4.png" alt="bruh" width="350" ></td>
                         </tr>
                     </tbody>
                 </table>
