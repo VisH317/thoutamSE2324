@@ -23,6 +23,10 @@
     /*transform-origin: bottom left;*/
 }
 
+.about-team {
+    font-size: 40px;
+}
+
 .how-to {
     font-size: 20px;
 }
@@ -38,6 +42,13 @@
 .overview {
     background-color: #dbe3e7
 }
+
+/* td {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+} */
 
 .ov-pad-left {
     padding-left: 20px;
